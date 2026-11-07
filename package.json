@@ -1,0 +1,24 @@
+{
+  "name": "chud",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Teach-to-learn assessment: learners teach an AI student, and its exam score measures how well they taught.",
+  "scripts": {
+    "dev": "tsx watch --env-file-if-exists=.env server/index.ts",
+    "start": "tsx --env-file-if-exists=.env server/index.ts",
+    "mock": "MOCK_AI=1 tsx --env-file-if-exists=.env server/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.6.0",
+    "express": "^5.3.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

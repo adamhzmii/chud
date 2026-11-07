@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CHUD: Teach it to learn it</title>
+<meta name="description" content="Teach Chud, an AI student who knows nothing, any concept. Chud takes an exam, and its score shows how well you really understand it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/app.css">
+<script>try{const t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+  <div id="mockBanner" class="banner" hidden>Mock mode: Chud is using canned replies. Add ANTHROPIC_API_KEY and run <code>npm start</code> for the real thing.</div>
+  <header class="topbar">
+    <div class="inner">
+      <a href="#/" class="logo" id="logo">CHUD</a>
+      <div class="top-actions">
+        <a href="#/" class="btn btn-ghost btn-sm" id="newBtn" hidden>New concept</a>
+        <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="view"></main>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
